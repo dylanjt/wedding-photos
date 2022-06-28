@@ -8,7 +8,7 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <title>Amara & Dylan&apos;s Wedding Pictures</title>
       </Head>
-      <div className="bg-black/20">
+      <div className="bg-black/20 relative min-h-screen">
         <div className="py-4 bg-cover space-y-2 text-center shadow-xl shadow-black/50 text-orange-100 bg-black/40 backdrop-blur-sm sticky top-0 z-50">
           <div className="text-2xl sm:text-4xl">Amara & Dylan</div>
           <div className="text-md sm:text-xl text-orange-100">
@@ -24,7 +24,12 @@ const App = ({ Component, pageProps }) => {
         <div className="bg-black/20 text-orange-100">
           <div className="container mx-auto px-8 py-4 flex flex-row justify-between text-sm">
             <div className="flex flex-row space-x-8">
-              <div>Photography by RTP Images, llc.</div>
+              <div>
+                Photography by{' '}
+                <a href="https://instagram.com/rtp_images_" className="underline">
+                  RTP Images, llc.
+                </a>
+              </div>
               <div>
                 Website by{' '}
                 <a href="https://dt.engineering" className="underline">
